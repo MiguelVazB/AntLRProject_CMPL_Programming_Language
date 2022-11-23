@@ -14,41 +14,55 @@ class MyCMPLVisitor(CMPLVisitor):
         self.variables[var] = val
 
     def visitShowStatement(self, ctx: CMPLParser.ShowStatementContext):
-        if ctx.PLUS_PLUS():
-            var = ctx.expr().getText()
-            var = int(self.variables[var])
-            var += 1
-            print(var)
+        if ctx.expr():
+            val = self.visit(ctx.expr())
+            if ctx.PLUS_PLUS():
+                try:
+                    if int(val):
+                        val = int(val)
+                        val += 1
+                except ValueError:
+                    val = val+val
+            else:
+                if str(val) in self.variables:
+                    val = self.variables[str(val)]
+                    print(val)
+            print(val)
         else:
-            in_show = str(ctx.expr().getText())
-            try:
-                print(int(in_show))
-            except ValueError:
-                pass
-                if in_show in self.variables:
-                    print(self.variables[in_show])
-                else:
-                    print(self.visit(ctx.expr()))
+            print("show statement has nothing to show!")
 
     def visitTypeExpr(self, ctx: CMPLParser.TypeExprContext):
-        if int(ctx.getText()):
-            self.stack.append(int(ctx.getText()))
-            return int(ctx.getText())
-        if float(ctx.getText()):
-            return float(ctx.getText())
-        if ctx.STRING():
-            return ctx.STRING().getText()[1:-1]
-        if ctx.BOOLEAN():
-            return ctx.BOOLEAN.getText() == "true"
-        if ctx.NULL():
-            return
+        try:
+            if int(ctx.getText()):
+                self.stack.append(int(ctx.getText()))
+                return int(ctx.getText())
+        except ValueError:
+            pass
+        try:
+            if float(ctx.getText()):
+                self.stack.append(float(ctx.getText()))
+                return float(ctx.getText())
+        except ValueError:
+            pass
+        try:
+            if str(ctx.getText()):
+                self.stack.append(str(ctx.getText()[1:-1]))
+                return str(ctx.getText()[1:-1])
+        except ValueError:
+            pass
+        try:
+            if bool(ctx.getText()):
+                return ctx.BOOLEAN.getText() == "true"
+        except ValueError:
+            pass
+        return 'null'
 
     def visitVarExpr(self, ctx: CMPLParser.VarExprContext):
-        var = str(ctx.VAR().getText())
+        var = ctx.VAR().getText()
         if var in self.variables:
-            self.stack.append(int(self.variables[var]))
+            return self.variables[var]
         else:
-            raise Exception("Variable ", var, " not defined!")
+            print('Variable ', str(var), ' not defined!')
 
     # Visit a parse tree produced by ExprParser#infixExpr.
     def visitInfixExpr(self, ctx: CMPLParser.InfixExprContext):

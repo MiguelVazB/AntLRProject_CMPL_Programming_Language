@@ -19,13 +19,13 @@ variable_stmt: var=VAR '=' exp=expr             #varStatement
 
 funct_call: var=VAR '(' (expr (',' expr)*)? ')';
 
-show_stmt: 'show(' expr PLUS_PLUS? ')'          #showStatement
+show_stmt: 'show(' expr? (PLUS_PLUS)? ')'          #showStatement
          ;
 
 expr: data_type                                 #typeExpr
     | VAR                                       #varExpr
     | funct_call                                #functionCall
-    | '(' expr ')'                              #parensExpr
+    | '(' expr* ')'                             #parensExpr
     | '!' expr                                  #negationExpr
     | left=expr op='^' right=expr               #infixExpr
     | left=expr op=('*'|'/') right=expr         #infixExpr
@@ -40,7 +40,6 @@ comparison_op: 'equals'
              | 'not equals'
              | 'greater'
              | 'smaller'
-             | 'greater'
              | 'greater or equal'
              | 'smaller or equal'
              ;
