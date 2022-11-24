@@ -1,37 +1,58 @@
-k = 0
-j = 5
 firstName = "Miguel"
 lastName = "Vazquez"
-fullName = firstName + " " + lastName
+fullName = firstName +" "+ lastName
 
 show(fullName)
+show(age)
+show()
+a=2
+show(a + " + 1 = " + a++)
+
+k = 0
+j = 5
 
 if j equals 5 and k not equals 12
 {
     show("inside if")
     while k smaller 10
     {
-        show(k)
+        show("inside while loop")
+        show("iteration: " + k)
         k++
     }
     if k equals 10
     {
-        show("inside nested loop!")
+        show("outside of while loop!")
+        show("nested if!")
         show("k equals "+k)
     }
-}
-else
-{
+    if k smaller or equal 5{
+        show(k + " is smaller or equal 5")
+    }
+    else if k greater or equal 10{
+        show("inside else if!")
+    }
+}else{
     show("j is "+j)
 }
 
 h = ((j * 2)-3*(4/2+1))^2
 
 if h smaller 0 or j greater 0{
-    show(h)
+    if h smaller 0{
+        show(h + " is smaller than 0")
+    }else{
+        show(j + " is greater than 0")
+    }
 }
 
-show("done!")
-
-show()
-
+if h equals 10{
+    show(h + " equals 10")
+}else if h greater 8{
+    show(h + " is greater than 8")
+}else if h not equals 1{
+    show(h + " is not equal to 1")
+}else{
+    show("h is " + h)
+    show('Done!')
+}

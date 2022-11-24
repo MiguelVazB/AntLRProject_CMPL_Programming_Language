@@ -74,7 +74,8 @@ class MyCMPLVisitor(CMPLVisitor):
 
         if isinstance(a, str) or isinstance(b, str):
             if ctx.OP_ADD():
-                return str(a) + str(b)
+                s = str(a) + str(b)
+                return s
             else:
                 return "invalid operation!"
         else:

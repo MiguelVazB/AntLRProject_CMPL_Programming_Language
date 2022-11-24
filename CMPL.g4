@@ -14,7 +14,7 @@ while_scope: WHILE expr scope;
 
 scope: NEWLINE* '{' NEWLINE* stmts* NEWLINE* '}' NEWLINE*;
 
-variable_stmt: var=VAR '=' exp=expr           #varStatement
+variable_stmt: var=VAR '=' exp=expr       #varStatement
              ;
 
 show_stmt: 'show' '(' expr? plus_plus_minus_minus? ')' #showStatement
