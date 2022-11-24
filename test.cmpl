@@ -1,5 +1,10 @@
 k = 0
 j = 5
+firstName = "Miguel"
+lastName = "Vazquez"
+fullName = firstName + " " + lastName
+
+show(fullName)
 
 if j equals 5 and k not equals 12
 {
@@ -18,6 +23,12 @@ if j equals 5 and k not equals 12
 else
 {
     show("j is "+j)
+}
+
+h = ((j * 2)-3*(4/2+1))^2
+
+if h smaller 0 or j greater 0{
+    show(h)
 }
 
 show("done!")

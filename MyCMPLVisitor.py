@@ -62,7 +62,7 @@ class MyCMPLVisitor(CMPLVisitor):
     def visitInfixExpr(self, ctx: CMPLParser.InfixExprContext):
         a = self.visit(ctx.left)
         b = self.visit(ctx.right)
-        c = ''
+        c = 'null'
 
         if a == 'null' or b == 'null':
             return "One of the variables is not defined!"
