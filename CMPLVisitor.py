@@ -99,6 +99,11 @@ class CMPLVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CMPLParser#plus_plus_minus_minus.
+    def visitPlus_plus_minus_minus(self, ctx:CMPLParser.Plus_plus_minus_minusContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CMPLParser#data_type.
     def visitData_type(self, ctx:CMPLParser.Data_typeContext):
         return self.visitChildren(ctx)

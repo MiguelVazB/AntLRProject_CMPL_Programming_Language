@@ -1,1 +1,10 @@
-show(2.2+2.3)
+k = 0
+j = 5
+
+while k greater 10
+{
+    show(k)
+    k++
+}
+
+show("done!")

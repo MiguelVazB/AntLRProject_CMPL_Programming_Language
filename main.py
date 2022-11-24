@@ -1,4 +1,5 @@
 import sys
+import antlr4
 from antlr4 import *
 from CMPLLexer import CMPLLexer
 from CMPLParser import CMPLParser
@@ -12,8 +13,8 @@ def main(argv):
         file = open(argv[1], mode='r')
         all_of_it = file.read()
         file.close()
-        userInput = InputStream(all_of_it)
-
+        inputReady = all_of_it.replace("\n", "")
+        userInput = InputStream(inputReady)
         lexer = CMPLLexer(userInput)
         stream = CommonTokenStream(lexer)
         parser = CMPLParser(stream)

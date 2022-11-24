@@ -170,6 +170,15 @@ class CMPLListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CMPLParser#plus_plus_minus_minus.
+    def enterPlus_plus_minus_minus(self, ctx:CMPLParser.Plus_plus_minus_minusContext):
+        pass
+
+    # Exit a parse tree produced by CMPLParser#plus_plus_minus_minus.
+    def exitPlus_plus_minus_minus(self, ctx:CMPLParser.Plus_plus_minus_minusContext):
+        pass
+
+
     # Enter a parse tree produced by CMPLParser#data_type.
     def enterData_type(self, ctx:CMPLParser.Data_typeContext):
         pass
