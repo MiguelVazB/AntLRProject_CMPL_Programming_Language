@@ -16,7 +16,7 @@ class MyCMPLVisitor(CMPLVisitor):
     def visitShowStatement(self, ctx: CMPLParser.ShowStatementContext):
         if ctx.expr():
             val = self.visit(ctx.expr())
-            if val != 'null':
+            if val != 'null' or val is not None:
                 if ctx.plus_plus_minus_minus():
                     if val != 'null':
                         val = self.visit(ctx.plus_plus_minus_minus())
@@ -101,7 +101,9 @@ class MyCMPLVisitor(CMPLVisitor):
 
     # Visit a parse tree produced by ExprParser#parensExpr.
     def visitParensExpr(self, ctx: CMPLParser.ParensExprContext):
-        return self.visit(ctx.expr())
+        if ctx.expr():
+            return self.visit(ctx.expr())
+        return "null"
 
     def visitWhile_scope(self, ctx: CMPLParser.While_scopeContext):
         if ctx.WHILE():
@@ -171,3 +173,13 @@ class MyCMPLVisitor(CMPLVisitor):
                 return "false"
         else:
             print("Invalid logical expression!")
+
+    def visitIf_scope(self, ctx: CMPLParser.If_scopeContext):
+        condition = self.visit(ctx.expr())
+        if condition != 'null':
+            if condition == 'true':
+                self.visit(ctx.scope())
+            else:
+                self.visit(ctx.else_if_scope())
+        else:
+            return 'null'

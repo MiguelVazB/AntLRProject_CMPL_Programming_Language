@@ -49,11 +49,6 @@ class CMPLVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CMPLParser#funct_call.
-    def visitFunct_call(self, ctx:CMPLParser.Funct_callContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by CMPLParser#showStatement.
     def visitShowStatement(self, ctx:CMPLParser.ShowStatementContext):
         return self.visitChildren(ctx)
@@ -69,18 +64,8 @@ class CMPLVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CMPLParser#negationExpr.
-    def visitNegationExpr(self, ctx:CMPLParser.NegationExprContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by CMPLParser#typeExpr.
     def visitTypeExpr(self, ctx:CMPLParser.TypeExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by CMPLParser#functionCall.
-    def visitFunctionCall(self, ctx:CMPLParser.FunctionCallContext):
         return self.visitChildren(ctx)
 
 

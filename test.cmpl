@@ -1,10 +1,26 @@
 k = 0
 j = 5
 
-while k greater 10
+if j equals 5 and k not equals 12
 {
-    show(k)
-    k++
+    show("inside if")
+    while k smaller 10
+    {
+        show(k)
+        k++
+    }
+    if k equals 10
+    {
+        show("inside nested loop!")
+        show("k equals "+k)
+    }
+}
+else
+{
+    show("j is "+j)
 }
 
 show("done!")
+
+show()
+

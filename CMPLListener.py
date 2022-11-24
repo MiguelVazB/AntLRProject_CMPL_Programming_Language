@@ -80,15 +80,6 @@ class CMPLListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CMPLParser#funct_call.
-    def enterFunct_call(self, ctx:CMPLParser.Funct_callContext):
-        pass
-
-    # Exit a parse tree produced by CMPLParser#funct_call.
-    def exitFunct_call(self, ctx:CMPLParser.Funct_callContext):
-        pass
-
-
     # Enter a parse tree produced by CMPLParser#showStatement.
     def enterShowStatement(self, ctx:CMPLParser.ShowStatementContext):
         pass
@@ -116,30 +107,12 @@ class CMPLListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CMPLParser#negationExpr.
-    def enterNegationExpr(self, ctx:CMPLParser.NegationExprContext):
-        pass
-
-    # Exit a parse tree produced by CMPLParser#negationExpr.
-    def exitNegationExpr(self, ctx:CMPLParser.NegationExprContext):
-        pass
-
-
     # Enter a parse tree produced by CMPLParser#typeExpr.
     def enterTypeExpr(self, ctx:CMPLParser.TypeExprContext):
         pass
 
     # Exit a parse tree produced by CMPLParser#typeExpr.
     def exitTypeExpr(self, ctx:CMPLParser.TypeExprContext):
-        pass
-
-
-    # Enter a parse tree produced by CMPLParser#functionCall.
-    def enterFunctionCall(self, ctx:CMPLParser.FunctionCallContext):
-        pass
-
-    # Exit a parse tree produced by CMPLParser#functionCall.
-    def exitFunctionCall(self, ctx:CMPLParser.FunctionCallContext):
         pass
 
 

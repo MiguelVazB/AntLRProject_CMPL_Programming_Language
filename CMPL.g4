@@ -4,7 +4,7 @@ prog: stmts* EOF;
 
 stmts: stmt | if_scope | while_scope;
 
-stmt: (variable_stmt | funct_call | expr | show_stmt) NEWLINE*;
+stmt: (variable_stmt | expr | show_stmt) NEWLINE*;
 
 if_scope: 'if' expr scope ('else' else_if_scope)?;
 
@@ -17,21 +17,17 @@ scope: NEWLINE* '{' NEWLINE* stmts* NEWLINE* '}' NEWLINE*;
 variable_stmt: var=VAR '=' exp=expr           #varStatement
              ;
 
-funct_call: var=VAR '(' (expr (',' expr)*)? ')';
-
-show_stmt: 'show(' expr plus_plus_minus_minus? ')'   #showStatement
+show_stmt: 'show' '(' expr? plus_plus_minus_minus? ')' #showStatement
          ;
 
 expr: data_type                                 #typeExpr
-    | VAR plus_plus_minus_minus?                #varExpr
-    | funct_call                                #functionCall
-    | '(' expr ')'                             #parensExpr
-    | '!' expr                                  #negationExpr
+    | '(' expr? ')'                             #parensExpr
     | left=expr op='^' right=expr               #infixExpr
     | left=expr op=('*'|'/') right=expr         #infixExpr
     | left=expr op=('+'|'-') right=expr         #infixExpr
     | left=expr op=comparison_op right=expr     #compareExpr
     | left=expr op=logic_op right=expr          #logicExpr
+    | VAR plus_plus_minus_minus?                #varExpr
     ;
 
 plus_plus_minus_minus: PLUS_PLUS | MINUS_MINUS ;

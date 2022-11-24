@@ -1,5 +1,4 @@
 import sys
-import antlr4
 from antlr4 import *
 from CMPLLexer import CMPLLexer
 from CMPLParser import CMPLParser
@@ -25,7 +24,6 @@ def main(argv):
         try:
             while userInput != "u0004":
                 userInput = InputStream(input("(◔◡◔)✎ ➡ "))
-
                 lexer = CMPLLexer(userInput)
                 stream = CommonTokenStream(lexer)
                 parser = CMPLParser(stream)
