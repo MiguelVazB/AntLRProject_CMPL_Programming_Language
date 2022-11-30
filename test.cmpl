@@ -1,4 +1,3 @@
-show(
 firstName = "Miguel"
 lastName = "Vazquez"
 fullName = firstName +" "+ lastName
@@ -11,6 +10,9 @@ show(a + " + 1 = " + a++)
 
 k = 0
 j = 5
+
+jis5 = j equals 5 and k equals 0
+show("j equals 5 and k equals 0: " + jis5)
 
 if j equals 5 and k not equals 12
 {

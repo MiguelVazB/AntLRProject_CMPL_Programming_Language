@@ -10,59 +10,60 @@ else:
 
 def serializedATN():
     return [
-        4,1,32,157,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,32,159,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         1,0,5,0,30,8,0,10,0,12,0,33,9,0,1,0,1,0,1,1,1,1,1,1,3,1,40,8,1,1,
         2,1,2,1,2,3,2,45,8,2,1,2,5,2,48,8,2,10,2,12,2,51,9,2,1,3,1,3,1,3,
         1,3,1,3,3,3,58,8,3,1,4,1,4,3,4,62,8,4,1,5,1,5,1,5,1,5,1,6,5,6,69,
         8,6,10,6,12,6,72,9,6,1,6,1,6,5,6,76,8,6,10,6,12,6,79,9,6,1,6,5,6,
         82,8,6,10,6,12,6,85,9,6,1,6,5,6,88,8,6,10,6,12,6,91,9,6,1,6,1,6,
-        5,6,95,8,6,10,6,12,6,98,9,6,1,7,1,7,1,7,1,7,1,8,1,8,1,8,3,8,107,
-        8,8,1,8,3,8,110,8,8,1,8,1,8,1,9,1,9,1,9,1,9,3,9,118,8,9,1,9,1,9,
-        1,9,3,9,123,8,9,3,9,125,8,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,
-        1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,5,9,144,8,9,10,9,12,9,147,9,9,1,
-        10,1,10,1,11,1,11,1,12,1,12,1,13,1,13,1,13,0,1,18,14,0,2,4,6,8,10,
-        12,14,16,18,20,22,24,26,0,6,1,0,19,20,1,0,17,18,1,0,27,28,2,0,22,
-        25,31,31,1,0,9,14,1,0,15,16,166,0,31,1,0,0,0,2,39,1,0,0,0,4,44,1,
-        0,0,0,6,52,1,0,0,0,8,61,1,0,0,0,10,63,1,0,0,0,12,70,1,0,0,0,14,99,
-        1,0,0,0,16,103,1,0,0,0,18,124,1,0,0,0,20,148,1,0,0,0,22,150,1,0,
-        0,0,24,152,1,0,0,0,26,154,1,0,0,0,28,30,3,2,1,0,29,28,1,0,0,0,30,
-        33,1,0,0,0,31,29,1,0,0,0,31,32,1,0,0,0,32,34,1,0,0,0,33,31,1,0,0,
-        0,34,35,5,0,0,1,35,1,1,0,0,0,36,40,3,4,2,0,37,40,3,6,3,0,38,40,3,
-        10,5,0,39,36,1,0,0,0,39,37,1,0,0,0,39,38,1,0,0,0,40,3,1,0,0,0,41,
-        45,3,14,7,0,42,45,3,18,9,0,43,45,3,16,8,0,44,41,1,0,0,0,44,42,1,
-        0,0,0,44,43,1,0,0,0,45,49,1,0,0,0,46,48,5,30,0,0,47,46,1,0,0,0,48,
-        51,1,0,0,0,49,47,1,0,0,0,49,50,1,0,0,0,50,5,1,0,0,0,51,49,1,0,0,
-        0,52,53,5,1,0,0,53,54,3,18,9,0,54,57,3,12,6,0,55,56,5,2,0,0,56,58,
-        3,8,4,0,57,55,1,0,0,0,57,58,1,0,0,0,58,7,1,0,0,0,59,62,3,12,6,0,
-        60,62,3,6,3,0,61,59,1,0,0,0,61,60,1,0,0,0,62,9,1,0,0,0,63,64,5,26,
-        0,0,64,65,3,18,9,0,65,66,3,12,6,0,66,11,1,0,0,0,67,69,5,30,0,0,68,
-        67,1,0,0,0,69,72,1,0,0,0,70,68,1,0,0,0,70,71,1,0,0,0,71,73,1,0,0,
-        0,72,70,1,0,0,0,73,77,5,3,0,0,74,76,5,30,0,0,75,74,1,0,0,0,76,79,
-        1,0,0,0,77,75,1,0,0,0,77,78,1,0,0,0,78,83,1,0,0,0,79,77,1,0,0,0,
-        80,82,3,2,1,0,81,80,1,0,0,0,82,85,1,0,0,0,83,81,1,0,0,0,83,84,1,
-        0,0,0,84,89,1,0,0,0,85,83,1,0,0,0,86,88,5,30,0,0,87,86,1,0,0,0,88,
-        91,1,0,0,0,89,87,1,0,0,0,89,90,1,0,0,0,90,92,1,0,0,0,91,89,1,0,0,
-        0,92,96,5,4,0,0,93,95,5,30,0,0,94,93,1,0,0,0,95,98,1,0,0,0,96,94,
-        1,0,0,0,96,97,1,0,0,0,97,13,1,0,0,0,98,96,1,0,0,0,99,100,5,29,0,
-        0,100,101,5,5,0,0,101,102,3,18,9,0,102,15,1,0,0,0,103,104,5,6,0,
-        0,104,106,5,7,0,0,105,107,3,18,9,0,106,105,1,0,0,0,106,107,1,0,0,
-        0,107,109,1,0,0,0,108,110,3,20,10,0,109,108,1,0,0,0,109,110,1,0,
-        0,0,110,111,1,0,0,0,111,112,5,8,0,0,112,17,1,0,0,0,113,114,6,9,-1,
-        0,114,125,3,22,11,0,115,117,5,7,0,0,116,118,3,18,9,0,117,116,1,0,
-        0,0,117,118,1,0,0,0,118,119,1,0,0,0,119,125,5,8,0,0,120,122,5,29,
-        0,0,121,123,3,20,10,0,122,121,1,0,0,0,122,123,1,0,0,0,123,125,1,
-        0,0,0,124,113,1,0,0,0,124,115,1,0,0,0,124,120,1,0,0,0,125,145,1,
-        0,0,0,126,127,10,6,0,0,127,128,5,21,0,0,128,144,3,18,9,7,129,130,
-        10,5,0,0,130,131,7,0,0,0,131,144,3,18,9,6,132,133,10,4,0,0,133,134,
-        7,1,0,0,134,144,3,18,9,5,135,136,10,3,0,0,136,137,3,24,12,0,137,
-        138,3,18,9,4,138,144,1,0,0,0,139,140,10,2,0,0,140,141,3,26,13,0,
-        141,142,3,18,9,3,142,144,1,0,0,0,143,126,1,0,0,0,143,129,1,0,0,0,
-        143,132,1,0,0,0,143,135,1,0,0,0,143,139,1,0,0,0,144,147,1,0,0,0,
-        145,143,1,0,0,0,145,146,1,0,0,0,146,19,1,0,0,0,147,145,1,0,0,0,148,
-        149,7,2,0,0,149,21,1,0,0,0,150,151,7,3,0,0,151,23,1,0,0,0,152,153,
-        7,4,0,0,153,25,1,0,0,0,154,155,7,5,0,0,155,27,1,0,0,0,18,31,39,44,
-        49,57,61,70,77,83,89,96,106,109,117,122,124,143,145
+        5,6,95,8,6,10,6,12,6,98,9,6,1,7,1,7,1,7,1,7,3,7,104,8,7,1,8,1,8,
+        1,8,3,8,109,8,8,1,8,3,8,112,8,8,1,8,1,8,1,9,1,9,1,9,1,9,3,9,120,
+        8,9,1,9,1,9,1,9,3,9,125,8,9,3,9,127,8,9,1,9,1,9,1,9,1,9,1,9,1,9,
+        1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,5,9,146,8,9,10,9,12,
+        9,149,9,9,1,10,1,10,1,11,1,11,1,12,1,12,1,13,1,13,1,13,0,1,18,14,
+        0,2,4,6,8,10,12,14,16,18,20,22,24,26,0,6,1,0,19,20,1,0,17,18,1,0,
+        27,28,2,0,22,25,31,31,1,0,9,14,1,0,15,16,169,0,31,1,0,0,0,2,39,1,
+        0,0,0,4,44,1,0,0,0,6,52,1,0,0,0,8,61,1,0,0,0,10,63,1,0,0,0,12,70,
+        1,0,0,0,14,99,1,0,0,0,16,105,1,0,0,0,18,126,1,0,0,0,20,150,1,0,0,
+        0,22,152,1,0,0,0,24,154,1,0,0,0,26,156,1,0,0,0,28,30,3,2,1,0,29,
+        28,1,0,0,0,30,33,1,0,0,0,31,29,1,0,0,0,31,32,1,0,0,0,32,34,1,0,0,
+        0,33,31,1,0,0,0,34,35,5,0,0,1,35,1,1,0,0,0,36,40,3,4,2,0,37,40,3,
+        6,3,0,38,40,3,10,5,0,39,36,1,0,0,0,39,37,1,0,0,0,39,38,1,0,0,0,40,
+        3,1,0,0,0,41,45,3,14,7,0,42,45,3,18,9,0,43,45,3,16,8,0,44,41,1,0,
+        0,0,44,42,1,0,0,0,44,43,1,0,0,0,45,49,1,0,0,0,46,48,5,30,0,0,47,
+        46,1,0,0,0,48,51,1,0,0,0,49,47,1,0,0,0,49,50,1,0,0,0,50,5,1,0,0,
+        0,51,49,1,0,0,0,52,53,5,1,0,0,53,54,3,18,9,0,54,57,3,12,6,0,55,56,
+        5,2,0,0,56,58,3,8,4,0,57,55,1,0,0,0,57,58,1,0,0,0,58,7,1,0,0,0,59,
+        62,3,12,6,0,60,62,3,6,3,0,61,59,1,0,0,0,61,60,1,0,0,0,62,9,1,0,0,
+        0,63,64,5,26,0,0,64,65,3,18,9,0,65,66,3,12,6,0,66,11,1,0,0,0,67,
+        69,5,30,0,0,68,67,1,0,0,0,69,72,1,0,0,0,70,68,1,0,0,0,70,71,1,0,
+        0,0,71,73,1,0,0,0,72,70,1,0,0,0,73,77,5,3,0,0,74,76,5,30,0,0,75,
+        74,1,0,0,0,76,79,1,0,0,0,77,75,1,0,0,0,77,78,1,0,0,0,78,83,1,0,0,
+        0,79,77,1,0,0,0,80,82,3,2,1,0,81,80,1,0,0,0,82,85,1,0,0,0,83,81,
+        1,0,0,0,83,84,1,0,0,0,84,89,1,0,0,0,85,83,1,0,0,0,86,88,5,30,0,0,
+        87,86,1,0,0,0,88,91,1,0,0,0,89,87,1,0,0,0,89,90,1,0,0,0,90,92,1,
+        0,0,0,91,89,1,0,0,0,92,96,5,4,0,0,93,95,5,30,0,0,94,93,1,0,0,0,95,
+        98,1,0,0,0,96,94,1,0,0,0,96,97,1,0,0,0,97,13,1,0,0,0,98,96,1,0,0,
+        0,99,100,5,29,0,0,100,101,5,5,0,0,101,103,3,18,9,0,102,104,5,30,
+        0,0,103,102,1,0,0,0,103,104,1,0,0,0,104,15,1,0,0,0,105,106,5,6,0,
+        0,106,108,5,7,0,0,107,109,3,18,9,0,108,107,1,0,0,0,108,109,1,0,0,
+        0,109,111,1,0,0,0,110,112,3,20,10,0,111,110,1,0,0,0,111,112,1,0,
+        0,0,112,113,1,0,0,0,113,114,5,8,0,0,114,17,1,0,0,0,115,116,6,9,-1,
+        0,116,127,3,22,11,0,117,119,5,7,0,0,118,120,3,18,9,0,119,118,1,0,
+        0,0,119,120,1,0,0,0,120,121,1,0,0,0,121,127,5,8,0,0,122,124,5,29,
+        0,0,123,125,3,20,10,0,124,123,1,0,0,0,124,125,1,0,0,0,125,127,1,
+        0,0,0,126,115,1,0,0,0,126,117,1,0,0,0,126,122,1,0,0,0,127,147,1,
+        0,0,0,128,129,10,6,0,0,129,130,5,21,0,0,130,146,3,18,9,7,131,132,
+        10,5,0,0,132,133,7,0,0,0,133,146,3,18,9,6,134,135,10,4,0,0,135,136,
+        7,1,0,0,136,146,3,18,9,5,137,138,10,3,0,0,138,139,3,24,12,0,139,
+        140,3,18,9,4,140,146,1,0,0,0,141,142,10,2,0,0,142,143,3,26,13,0,
+        143,144,3,18,9,3,144,146,1,0,0,0,145,128,1,0,0,0,145,131,1,0,0,0,
+        145,134,1,0,0,0,145,137,1,0,0,0,145,141,1,0,0,0,146,149,1,0,0,0,
+        147,145,1,0,0,0,147,148,1,0,0,0,148,19,1,0,0,0,149,147,1,0,0,0,150,
+        151,7,2,0,0,151,21,1,0,0,0,152,153,7,3,0,0,153,23,1,0,0,0,154,155,
+        7,4,0,0,155,25,1,0,0,0,156,157,7,5,0,0,157,27,1,0,0,0,19,31,39,44,
+        49,57,61,70,77,83,89,96,103,108,111,119,124,126,145,147
     ]
 
 class CMPLParser ( Parser ):
@@ -720,6 +721,8 @@ class CMPLParser ( Parser ):
         def expr(self):
             return self.getTypedRuleContext(CMPLParser.ExprContext,0)
 
+        def NEWLINE(self):
+            return self.getToken(CMPLParser.NEWLINE, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterVarStatement" ):
@@ -750,6 +753,14 @@ class CMPLParser ( Parser ):
             self.match(CMPLParser.T__4)
             self.state = 101
             localctx.exp = self.expr(0)
+            self.state = 103
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
+            if la_ == 1:
+                self.state = 102
+                self.match(CMPLParser.NEWLINE)
+
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -813,27 +824,27 @@ class CMPLParser ( Parser ):
         try:
             localctx = CMPLParser.ShowStatementContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 103
+            self.state = 105
             self.match(CMPLParser.T__5)
-            self.state = 104
-            self.match(CMPLParser.T__6)
             self.state = 106
+            self.match(CMPLParser.T__6)
+            self.state = 108
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if ((_la) & ~0x3f) == 0 and ((1 << _la) & 2747269248) != 0:
-                self.state = 105
+                self.state = 107
                 self.expr(0)
 
 
-            self.state = 109
+            self.state = 111
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==27 or _la==28:
-                self.state = 108
+                self.state = 110
                 self.plus_plus_minus_minus()
 
 
-            self.state = 111
+            self.state = 113
             self.match(CMPLParser.T__7)
         except RecognitionException as re:
             localctx.exception = re
@@ -1057,7 +1068,7 @@ class CMPLParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 124
+            self.state = 126
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [22, 23, 24, 25, 31]:
@@ -1065,37 +1076,37 @@ class CMPLParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 114
+                self.state = 116
                 self.data_type()
                 pass
             elif token in [7]:
                 localctx = CMPLParser.ParensExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 115
-                self.match(CMPLParser.T__6)
                 self.state = 117
+                self.match(CMPLParser.T__6)
+                self.state = 119
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if ((_la) & ~0x3f) == 0 and ((1 << _la) & 2747269248) != 0:
-                    self.state = 116
+                    self.state = 118
                     self.expr(0)
 
 
-                self.state = 119
+                self.state = 121
                 self.match(CMPLParser.T__7)
                 pass
             elif token in [29]:
                 localctx = CMPLParser.VarExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 120
-                self.match(CMPLParser.VAR)
                 self.state = 122
+                self.match(CMPLParser.VAR)
+                self.state = 124
                 self._errHandler.sync(self)
-                la_ = self._interp.adaptivePredict(self._input,14,self._ctx)
+                la_ = self._interp.adaptivePredict(self._input,15,self._ctx)
                 if la_ == 1:
-                    self.state = 121
+                    self.state = 123
                     self.plus_plus_minus_minus()
 
 
@@ -1104,28 +1115,28 @@ class CMPLParser ( Parser ):
                 raise NoViableAltException(self)
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 145
+            self.state = 147
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,17,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,18,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 143
+                    self.state = 145
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,16,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,17,self._ctx)
                     if la_ == 1:
                         localctx = CMPLParser.InfixExprContext(self, CMPLParser.ExprContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 126
+                        self.state = 128
                         if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
-                        self.state = 127
+                        self.state = 129
                         localctx.op = self.match(CMPLParser.OP_POW)
-                        self.state = 128
+                        self.state = 130
                         localctx.right = self.expr(7)
                         pass
 
@@ -1133,11 +1144,11 @@ class CMPLParser ( Parser ):
                         localctx = CMPLParser.InfixExprContext(self, CMPLParser.ExprContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 129
+                        self.state = 131
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
-                        self.state = 130
+                        self.state = 132
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not(_la==19 or _la==20):
@@ -1145,7 +1156,7 @@ class CMPLParser ( Parser ):
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 131
+                        self.state = 133
                         localctx.right = self.expr(6)
                         pass
 
@@ -1153,11 +1164,11 @@ class CMPLParser ( Parser ):
                         localctx = CMPLParser.InfixExprContext(self, CMPLParser.ExprContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 132
+                        self.state = 134
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 133
+                        self.state = 135
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
                         if not(_la==17 or _la==18):
@@ -1165,7 +1176,7 @@ class CMPLParser ( Parser ):
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 134
+                        self.state = 136
                         localctx.right = self.expr(5)
                         pass
 
@@ -1173,13 +1184,13 @@ class CMPLParser ( Parser ):
                         localctx = CMPLParser.CompareExprContext(self, CMPLParser.ExprContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 135
+                        self.state = 137
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 136
+                        self.state = 138
                         localctx.op = self.comparison_op()
-                        self.state = 137
+                        self.state = 139
                         localctx.right = self.expr(4)
                         pass
 
@@ -1187,20 +1198,20 @@ class CMPLParser ( Parser ):
                         localctx = CMPLParser.LogicExprContext(self, CMPLParser.ExprContext(self, _parentctx, _parentState))
                         localctx.left = _prevctx
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 139
+                        self.state = 141
                         if not self.precpred(self._ctx, 2):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                        self.state = 140
+                        self.state = 142
                         localctx.op = self.logic_op()
-                        self.state = 141
+                        self.state = 143
                         localctx.right = self.expr(3)
                         pass
 
              
-                self.state = 147
+                self.state = 149
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,17,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,18,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1251,7 +1262,7 @@ class CMPLParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 148
+            self.state = 150
             _la = self._input.LA(1)
             if not(_la==27 or _la==28):
                 self._errHandler.recoverInline(self)
@@ -1316,7 +1327,7 @@ class CMPLParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 150
+            self.state = 152
             _la = self._input.LA(1)
             if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 2210398208) != 0):
                 self._errHandler.recoverInline(self)
@@ -1367,7 +1378,7 @@ class CMPLParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 152
+            self.state = 154
             _la = self._input.LA(1)
             if not(((_la) & ~0x3f) == 0 and ((1 << _la) & 32256) != 0):
                 self._errHandler.recoverInline(self)
@@ -1418,7 +1429,7 @@ class CMPLParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 154
+            self.state = 156
             _la = self._input.LA(1)
             if not(_la==15 or _la==16):
                 self._errHandler.recoverInline(self)

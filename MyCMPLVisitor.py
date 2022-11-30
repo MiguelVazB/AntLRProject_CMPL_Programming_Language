@@ -181,6 +181,6 @@ class MyCMPLVisitor(CMPLVisitor):
             if condition == 'true':
                 self.visit(ctx.scope())
             else:
-                self.visit(ctx.else_if_scope())
+                return 'null'
         else:
-            return 'null'
+            self.visit(ctx.else_if_scope())

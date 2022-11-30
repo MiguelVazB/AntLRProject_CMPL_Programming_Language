@@ -17,7 +17,6 @@ def main(argv):
         userInput = InputStream(all_of_it)
         lexer = CMPLLexer(userInput)
         lexer.removeErrorListeners()
-        lexer.addErrorListener(CMPLErrorListener())
 
         stream = CommonTokenStream(lexer)
 

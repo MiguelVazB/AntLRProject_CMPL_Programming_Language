@@ -14,7 +14,7 @@ while_scope: WHILE expr scope;
 
 scope: NEWLINE* '{' NEWLINE* stmts* NEWLINE* '}' NEWLINE*;
 
-variable_stmt: var=VAR '=' exp=expr       #varStatement
+variable_stmt: var=VAR '=' exp=expr  NEWLINE?     #varStatement
              ;
 
 show_stmt: 'show' '(' expr? plus_plus_minus_minus? ')' #showStatement
@@ -57,7 +57,7 @@ NULL: 'null';
 WHILE: 'while';
 PLUS_PLUS: '++';
 MINUS_MINUS: '--';
-VAR : [a-zA-Z]+ ;
+VAR : [a-zA-Z]+ [0-9]?;
 NEWLINE : [\r\n]+ ;
 INT     : [0-9]+ ;
 WS      : [ \t\r\n] -> channel(HIDDEN);
