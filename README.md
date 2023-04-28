@@ -1,2 +1,15 @@
 # AntLRProject_CMPL_Programming_Language
 CMPL programming language created using python and ANTLR4
+
+---
+
+The CMPL Programming language has some of the fundamental parts of a programming language like variable assignments, a show function, arithmetic operations (including the ++ operator), logical operators, if statements, data types, and while loops.
+
+The grammar supports the following data types: INT, FLOAT, STRING, BOOLEAN, and NULL.
+The grammar supports logical operators like equals, not equals, greater, smaller, greater or equal, and smaller or equal 
+
+---
+
+The program can be run as a command interpreter and the user can input while running the program.
+
+- run the following command: 'python 
