@@ -10,6 +10,18 @@ The grammar supports logical operators like equals, not equals, greater, smaller
 
 ---
 
+Pre-requesites:
+
+- pip
+- antlr4
+
+---
+
 The program can be run as a command interpreter and the user can input while running the program.
 
-- run the following command: 'python 
+- run the following command: 'python CMPL.py'
+
+The program can also read from a file.
+This can be done by using the command: 
+
+- python CMPL.py "file.cmpl"
