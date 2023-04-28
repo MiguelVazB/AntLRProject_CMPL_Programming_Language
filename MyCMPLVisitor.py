@@ -19,6 +19,7 @@ class MyCMPLVisitor(CMPLVisitor):
             if val != 'null' or val is not None:
                 if ctx.plus_plus_minus_minus():
                     if val != 'null':
+                        self.stack.append(val)
                         val = self.visit(ctx.plus_plus_minus_minus())
                 else:
                     if str(val) in self.variables:
