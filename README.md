@@ -19,7 +19,11 @@ Pre-requesites:
 
 The program can be run as a command interpreter and the user can input while running the program.
 
-- run the following command: 'python CMPL.py'
+- Install a virtual environment: 'pip install virtualenv'
+- Run the following command: 'virtualenv env'
+- Run the following command: 'env\Scripts\activate'
+- Run the following command: 'pip install antlr4-python3-runtime==4.11.1'
+- Run the following command: 'python CMPL.py'
 
 The program can also read from a file.
 This can be done by using the command: 
